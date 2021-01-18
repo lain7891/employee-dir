@@ -1,11 +1,20 @@
-import employee from "./components/employee";
+import React from'react';
+import Employee from "./components/Employee";
+import Footer from './components/Footer';
+import Header from './components/Header';
 
-function App() {
-  return (
-    <div className="App">
- <employee/>
-    </div>
-  );
+
+export default class App extends React.Component{
+  render(){
+    return(
+<div>
+<h1>Hello</h1>
+<Header/>
+
+<Employee/>
+<Footer/>
+</div>
+    )
+  }
 }
 
-export default App;
